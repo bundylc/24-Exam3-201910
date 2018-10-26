@@ -43,8 +43,8 @@ def shape(n):
             yo = yo + str(m+1)
         for j in range(k+1):
             bye = str(bye) + str('*')
-        for s in range(1, n):
-            now = str(n-k)
+        for s in range(n+2-len(bye), 0, -1):
+            now = now + str(s)
         yo = str(hello) + str(yo) + str(' ') + str(bye) + str(' ') + str(now)
         print(yo)
 
