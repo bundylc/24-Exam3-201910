@@ -73,7 +73,7 @@ def run_test_problem2():
 
 
 def problem2(sequence):
-    if sequence[0] == -500:
+    if len(sequence) == 1:
         return 0
     else:
         now = abs(sequence[0])
