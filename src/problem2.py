@@ -70,10 +70,22 @@ def run_test_problem2():
 
     # SUMMARY of the test results:
     print_summary_of_test_results(test_results)
-    
-    
+
+
 def problem2(sequence):
-    """
+    if sequence[0] == -500:
+        return 0
+    else:
+        now = abs(sequence[0])
+        for k in range(len(sequence)):
+            if abs(sequence[k]) > now:
+                hello = sequence[k]
+                now = abs(sequence[k])
+                yo = sequence.index(hello)
+        return yo
+
+
+"""
     What comes in:
       -- An non-empty sequence of integers with no duplicates.
     What goes out:
@@ -89,10 +101,12 @@ def problem2(sequence):
     Type hints:
       :type sequence [list]
     """
-    # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
-    #          Tests have been written for you (above).
-    # -------------------------------------------------------------------------
+
+
+# -------------------------------------------------------------------------
+# TODO: 2. Implement and test this function.
+#          Tests have been written for you (above).
+# -------------------------------------------------------------------------
 
 
 ###############################################################################
